@@ -1,0 +1,14 @@
+# intermediates
+*.o
+version.c
+version.h
+VERSION
+
+# output
+/common/libcommon.a
+/mopchk/mopchk
+/mopd/mopd
+/mopprobe/mopprobe
+/moptrace/moptrace
+
+
