@@ -55,7 +55,7 @@
  * The list of all interfaces that are being listened to. 
  * "selects" on the descriptors in this list.
  */
-struct if_info *iflist;
+extern struct if_info *iflist;
 
 void	Usage __P((void));
 int	main __P((int, char **));

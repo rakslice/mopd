@@ -47,6 +47,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <string.h>
+#include <arpa/inet.h>
 
 #define LINUX2_PF
 #define SETPGRP_NOPARAM

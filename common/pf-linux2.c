@@ -40,6 +40,7 @@
 #include <netdb.h>
 #include <ctype.h>
 #include <string.h>
+#include <unistd.h>
 
 #define MOPDEF_SUPRESS_EXTERN
 #include "mopdef.h"
@@ -56,6 +57,13 @@ struct RDS {
   u_short dataLen;
   u_char *dataPtr;
 };
+
+/*
+ * forward declarations
+ */
+
+int
+setup_pf(int, u_short, int);
 
 /*
  * variables

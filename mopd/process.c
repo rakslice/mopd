@@ -421,7 +421,7 @@ mopNextLoad(dst, src, new_count, trans)
 #else
 			sprintf(hostname,"%s",DEFAULT_HOSTNAME);
 #endif
-			syslog(LOG_INFO,"hostname: [%s] len: %d\n",hostname,strlen(hostname));
+			syslog(LOG_INFO,"hostname: [%s] len: %d\n",hostname, (int) strlen(hostname));
 			index = pindex;
 			mopcode = MOP_K_CODE_PLT;
 			mopPutChar (pkt,&index,mopcode);
@@ -481,7 +481,7 @@ mopProcessDL(fd, ii, pkt, index, dst, src, trans, len)
 	u_short moplen;
 	u_char  pfile[129], mopcode;
 	char    filename[FILENAME_MAX];
-	char    line[100];
+	char    line[192];
 	int     i,nfd,iindex;
 	struct dllist dl,*dl_rpr;
 	u_char  rpr_pgty,load;
